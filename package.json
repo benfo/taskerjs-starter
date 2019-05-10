@@ -1,0 +1,19 @@
+{
+  "name": "taskerjs-starter",
+  "dependencies": {
+    "taskerjs": "github:benfo/taskerjs#master"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "npm-watch": "^0.6.0",
+    "parcel-bundler": "^1.12.3"
+  },
+  "scripts": {
+    "build": "parcel build src/index.js --experimental-scope-hoisting",
+    "push": "npm run build && cross-env-shell adb push ./dist/index.js /sdcard/Tasker/scripts/$npm_package_name/index.js",
+    "dev": "npm-watch push"
+  },
+  "watch": {
+    "push": "src/*"
+  }
+}
