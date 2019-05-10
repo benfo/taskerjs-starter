@@ -12,7 +12,7 @@ $ cd taskerjs-starter
 $ npm install
 ```
 
-Before deploying the application to your phone, make sure you have installed and correctly configured `adb` to communicate with your phone.
+Before deploying the application to your phone, make sure you have installed and correctly configured [adb](https://developer.android.com/studio/releases/platform-tools) to communicate with your phone.
 
 ```
 $ npm run push
